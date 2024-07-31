@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <form onsubmit="registerCall(event)">
+        <div>
+
+            <label> Email address: </label>
+            <input required placeholder="Enter email address" name="email" type="email" />
+        </div>
+        <div>
+
+            <label> Password: </label>
+            <input required placeholder="Enter password" name="password" type="password" />
+        </div>
+
+        <div>
+
+            <label> Name: </label>
+            <input required placeholder="Enter email address" name="name" />
+        </div>
+
+        <div>
+            <label> Birth date: </label>
+            <input required name="birthDay" type="date" />
+        </div>
+
+        <button type="submit"> Register </button>
+
+        <div id="dataDisplay"></div>
+        <span style="margin-inline: auto;">Already have an account? <a href="/login"
+                style="font-weight:bold; color:rgb(114, 114, 233);">Sign in now</a></span>
+
+
+    </form>
+
+    <script>
+
+        function registerCall(e) {
+            console.log("Reached")
+            e.preventDefault()
+            const form = Object.fromEntries(new FormData(e.target).entries())
+            console.log(form)
+            $.ajax({
+                url: '/auth/register',
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(form),
+                success: function (response) {
+                    if (response.status === 201) {
+                        window.location.href = "/login"
+                    }
+                },
+                error: function (err) {
+                    try {
+                        const { error } = JSON.parse(err.responseText)
+                        if (typeof error == "object") {
+                            const errorMapped = error.map(e => e.message).join("\n")
+                            $('#dataDisplay').text(errorMapped)
+                        }
+                        else {
+                            $('#dataDisplay').text(error)
+                        }
+                        console.error('Error fetching data:', err);
+                    } catch (e) {
+                        $('#dataDisplay').text(err)
+                    }
+                }
+            });
+        }
+    </script>
+
+    <style>
+        form {
+            display: flex;
+            margin-inline: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 2rem;
+            justify-content: center;
+            width: fit-content;
+            min-width: min(80%, 400px);
+            margin-block: 1rem;
+            gap: 1rem;
+            border: 1px solid lightgray;
+        }
+
+
+        form div {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        form div label {
+            font-weight: bold;
+            padding: .25rem;
+        }
+
+        form div input {
+            padding: .5rem;
+        }
+
+        form button {
+            padding: .5rem;
+            background-color: brown;
+            border: none;
+            margin-inline: auto;
+            width: 50%;
+            border-radius: 4px;
+            color: white;
+        }
+    </style>
+</body>
+
+</html>

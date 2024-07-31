@@ -1,0 +1,565 @@
+{
+    "items": [
+      {
+        "itemId": "001",
+        "name": "Compact Fluorescent Lamp",
+        "description": "Energy-saving CFL bulb with a 10,000-hour lifespan.",
+        "brand": "BrightLife",
+        "category": "Lighting",
+        "price": {
+          "amount": 3.50,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "1 year",
+        "tags": ["energy-efficient", "CFL", "eco-friendly"],
+        "images": [
+          {
+            "url": "http://example.com/images/cfl_bulb.jpg",
+            "description": "Top view of the CFL bulb"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4,
+            "comment": "Good value for money, but a bit dimmer than expected.",
+            "author": "John Smith",
+            "date": "2024-06-15"
+          }
+        ]
+      },
+      {
+        "itemId": "002",
+        "name": "Surge Protector",
+        "description": "6-outlet surge protector, ideal for safeguarding personal computers and other appliances.",
+        "brand": "SafePower",
+        "category": "Accessories",
+        "price": {
+          "amount": 15.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "3 years",
+        "tags": ["surge protector", "safety", "electronic"],
+        "images": [
+          {
+            "url": "http://example.com/images/surge_protector.jpg",
+            "description": "Front view of the surge protector"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.7,
+            "comment": "Reliable and sturdy, with a good warranty period.",
+            "author": "Alice Johnson",
+            "date": "2024-05-20"
+          }
+        ]
+      },
+      {
+        "itemId": "003",
+        "name": "Wireless Doorbell",
+        "description": "Wireless doorbell with a range of 100 meters, includes 32 different chimes.",
+        "brand": "DoorChime",
+        "category": "Home Automation",
+        "price": {
+          "amount": 20,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "2 years",
+        "tags": ["wireless", "doorbell", "convenient"],
+        "images": [
+          {
+            "url": "http://example.com/images/wireless_doorbell.jpg",
+            "description": "Front view of the wireless doorbell"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.8,
+            "comment": "Easy installation and great range.",
+            "author": "Michael Lee",
+            "date": "2024-04-10"
+          }
+        ]
+      },
+      {
+        "itemId": "004",
+        "name": "LED Desk Lamp",
+        "description": "Adjustable LED desk lamp with touch sensor and three brightness levels.",
+        "brand": "LumiDesk",
+        "category": "Office Equipment",
+        "price": {
+          "amount": 25.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "2 years",
+        "tags": ["LED", "desk lamp", "adjustable"],
+        "images": [
+          {
+            "url": "http://example.com/images/led_desk_lamp.jpg",
+            "description": "Angle view of the LED desk lamp"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.9,
+            "comment": "Perfect for late-night studying, love the touch sensor.",
+            "author": "Samantha Reed",
+            "date": "2024-03-29"
+          }
+        ]
+      },
+      {
+        "itemId": "005",
+        "name": "Electric Screwdriver",
+        "description": "Cordless electric screwdriver with a 10-piece bit set included.",
+        "brand": "FixIt",
+        "category": "Tools",
+        "price": {
+          "amount": 29.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "1 year",
+        "tags": ["electric", "screwdriver", "cordless"],
+        "images": [
+          {
+            "url": "http://example.com/images/electric_screwdriver.jpg",
+            "description": "Full kit of the electric screwdriver"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.3,
+            "comment": "Compact and powerful, great for DIY projects.",
+            "author": "Greg Nolan",
+            "date": "2024-02-12"
+          }
+        ]
+      },
+      {
+        "itemId": "006",
+        "name": "Solar Panel",
+        "description": "100W monocrystalline solar panel, ideal for residential roof mounting.",
+        "brand": "SunPower",
+        "category": "Renewable Energy",
+        "price": {
+          "amount": 99.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "5 years",
+        "tags": ["solar", "renewable energy", "eco-friendly"],
+        "images": [
+          {
+            "url": "http://example.com/images/solar_panel.jpg",
+            "description": "Top view of the monocrystalline solar panel"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 5,
+            "comment": "Excellent efficiency and easy to set up.",
+            "author": "Diane Morales",
+            "date": "2024-01-10"
+          }
+        ]
+      },
+      {
+        "itemId": "007",
+        "name": "Battery Charger",
+        "description": "Universal battery charger, compatible with AA, AAA, C, D, and 9V batteries.",
+        "brand": "ChargeAll",
+        "category": "Accessories",
+        "price": {
+          "amount": 14.95,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "1 year",
+        "tags": ["battery", "charger", "universal"],
+        "images": [
+          {
+            "url": "http://example.com/images/battery_charger.jpg",
+            "description": "Front view of the universal battery charger"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.6,
+            "comment": "Very versatile and charges quickly.",
+            "author": "Carlton Banks",
+            "date": "2023-12-22"
+          }
+        ]
+      },
+      {
+        "itemId": "008",
+        "name": "Motion Sensor Light",
+        "description": "Outdoor motion sensor light with LED bulbs, waterproof and dustproof.",
+        "brand": "SafeHome",
+        "category": "Outdoor Lighting",
+        "price": {
+          "amount": 35.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "3 years",
+        "tags": ["motion sensor", "LED", "outdoor"],
+        "images": [
+          {
+            "url": "http://example.com/images/motion_sensor_light.jpg",
+            "description": "Installation view of the motion sensor light"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.7,
+            "comment": "Bright and sensitive, perfect for our backyard.",
+            "author": "Rachel Green",
+            "date": "2023-11-15"
+          }
+        ]
+      },
+      {
+        "itemId": "009",
+        "name": "Extension Cord",
+        "description": "15-meter heavy-duty extension cord, suitable for both indoor and outdoor use.",
+        "brand": "LongReach",
+        "category": "Accessories",
+        "price": {
+          "amount": 12.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "2 years",
+        "tags": ["extension cord", "heavy-duty", "15m"],
+        "images": [
+          {
+            "url": "http://example.com/images/extension_cord.jpg",
+            "description": "Coiled view of the extension cord"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.5,
+            "comment": "Sturdy and reliable, does the job well.",
+            "author": "Monica Geller",
+            "date": "2023-10-30"
+          }
+        ]
+      },
+      {
+        "itemId": "010",
+        "name": "Electric Heater",
+        "description": "Portable electric heater with three heat settings and a thermostat.",
+        "brand": "WarmthPlus",
+        "category": "Heating",
+        "price": {
+          "amount": 45.50,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "2 years",
+        "tags": ["heater", "portable", "electric"],
+        "images": [
+          {
+            "url": "http://example.com/images/electric_heater.jpg",
+            "description": "Front view of the electric heater"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.8,
+            "comment": "Heats up quickly and is very portable.",
+            "author": "Phoebe Buffay",
+            "date": "2023-09-22"
+          }
+        ]
+      },
+      {
+        "itemId": "011",
+        "name": "Ceiling Fan",
+        "description": "Energy-efficient ceiling fan with remote control and LED light.",
+        "brand": "CoolBreeze",
+        "category": "Cooling",
+        "price": {
+          "amount": 79.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "3 years",
+        "tags": ["ceiling fan", "energy-efficient", "remote control"],
+        "images": [
+          {
+            "url": "http://example.com/images/ceiling_fan.jpg",
+            "description": "Side view of the ceiling fan"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.9,
+            "comment": "Quiet operation and the LED light is a nice touch.",
+            "author": "Ross Geller",
+            "date": "2023-08-15"
+          }
+        ]
+      },
+      {
+        "itemId": "012",
+        "name": "Smart Thermostat",
+        "description": "Wi-Fi enabled smart thermostat with voice control and energy-saving modes.",
+        "brand": "EcoControl",
+        "category": "Home Automation",
+        "price": {
+          "amount": 129.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "2 years",
+        "tags": ["smart thermostat", "Wi-Fi", "voice control"],
+        "images": [
+          {
+            "url": "http://example.com/images/smart_thermostat.jpg",
+            "description": "Front view of the smart thermostat"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 5,
+            "comment": "Easy to install and has great features.",
+            "author": "Joey Tribbiani",
+            "date": "2023-07-10"
+          }
+        ]
+      },
+      {
+        "itemId": "013",
+        "name": "Smart Plug",
+        "description": "Wi-Fi smart plug that works with Alexa and Google Assistant.",
+        "brand": "HomeSmart",
+        "category": "Home Automation",
+        "price": {
+          "amount": 14.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "1 year",
+        "tags": ["smart plug", "Wi-Fi", "voice control"],
+        "images": [
+          {
+            "url": "http://example.com/images/smart_plug.jpg",
+            "description": "Front view of the smart plug"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.6,
+            "comment": "Very convenient for controlling devices remotely.",
+            "author": "Chandler Bing",
+            "date": "2023-06-25"
+          }
+        ]
+      },
+      {
+        "itemId": "014",
+        "name": "Electric Kettle",
+        "description": "1.7L electric kettle with automatic shut-off and boil-dry protection.",
+        "brand": "QuickBoil",
+        "category": "Kitchen Appliances",
+        "price": {
+          "amount": 24.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "2 years",
+        "tags": ["electric kettle", "boil-dry protection", "automatic shut-off"],
+        "images": [
+          {
+            "url": "http://example.com/images/electric_kettle.jpg",
+            "description": "Side view of the electric kettle"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.8,
+            "comment": "Boils water quickly and safely.",
+            "author": "Rachel Green",
+            "date": "2023-05-20"
+          }
+        ]
+      },
+      {
+        "itemId": "015",
+        "name": "Blender",
+        "description": "High-performance blender with multiple speed settings and pulse function.",
+        "brand": "BlendMaster",
+        "category": "Kitchen Appliances",
+        "price": {
+          "amount": 49.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "1 year",
+        "tags": ["blender", "high-performance", "multiple speeds"],
+        "images": [
+          {
+            "url": "http://example.com/images/blender.jpg",
+            "description": "Full view of the blender"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.7,
+            "comment": "Great for smoothies and crushing ice.",
+            "author": "Monica Geller",
+            "date": "2023-04-15"
+          }
+        ]
+      },
+      {
+        "itemId": "016",
+        "name": "Electric Griddle",
+        "description": "Non-stick electric griddle with adjustable temperature control.",
+        "brand": "GrillEase",
+        "category": "Kitchen Appliances",
+        "price": {
+          "amount": 39.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "1 year",
+        "tags": ["electric griddle", "non-stick", "adjustable temperature"],
+        "images": [
+          {
+            "url": "http://example.com/images/electric_griddle.jpg",
+            "description": "Cooking surface of the electric griddle"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.5,
+            "comment": "Cooks evenly and is easy to clean.",
+            "author": "Phoebe Buffay",
+            "date": "2023-03-10"
+          }
+        ]
+      },
+      {
+        "itemId": "017",
+        "name": "Smart Light Bulb",
+        "description": "Color-changing smart LED light bulb with app control.",
+        "brand": "Lightify",
+        "category": "Lighting",
+        "price": {
+          "amount": 19.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "2 years",
+        "tags": ["smart light bulb", "LED", "color-changing"],
+        "images": [
+          {
+            "url": "http://example.com/images/smart_light_bulb.jpg",
+            "description": "Color options of the smart light bulb"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.8,
+            "comment": "Fun and functional, works well with the app.",
+            "author": "Chandler Bing",
+            "date": "2023-02-05"
+          }
+        ]
+      },
+      {
+        "itemId": "018",
+        "name": "Portable Air Conditioner",
+        "description": "Portable air conditioner with remote control and dehumidifier function.",
+        "brand": "CoolAir",
+        "category": "Cooling",
+        "price": {
+          "amount": 299.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "3 years",
+        "tags": ["portable air conditioner", "dehumidifier", "remote control"],
+        "images": [
+          {
+            "url": "http://example.com/images/portable_ac.jpg",
+            "description": "Front view of the portable air conditioner"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.9,
+            "comment": "Cools the room quickly and efficiently.",
+            "author": "Joey Tribbiani",
+            "date": "2023-01-01"
+          }
+        ]
+      },
+      {
+        "itemId": "019",
+        "name": "Electric Pressure Cooker",
+        "description": "6-quart electric pressure cooker with multiple cooking functions.",
+        "brand": "CookFast",
+        "category": "Kitchen Appliances",
+        "price": {
+          "amount": 89.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "2 years",
+        "tags": ["electric pressure cooker", "multiple functions", "6-quart"],
+        "images": [
+          {
+            "url": "http://example.com/images/pressure_cooker.jpg",
+            "description": "Front view of the electric pressure cooker"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.8,
+            "comment": "Cooks food quickly and evenly.",
+            "author": "Rachel Green",
+            "date": "2022-12-10"
+          }
+        ]
+      },
+      {
+        "itemId": "020",
+        "name": "Cordless Vacuum Cleaner",
+        "description": "Lightweight cordless vacuum cleaner with powerful suction.",
+        "brand": "CleanSweep",
+        "category": "Home Appliances",
+        "price": {
+          "amount": 159.99,
+          "currency": "USD"
+        },
+        "availability": "In Stock",
+        "warranty": "2 years",
+        "tags": ["cordless vacuum", "lightweight", "powerful suction"],
+        "images": [
+          {
+            "url": "http://example.com/images/cordless_vacuum.jpg",
+            "description": "Full view of the cordless vacuum cleaner"
+          }
+        ],
+        "reviews": [
+          {
+            "rating": 4.9,
+            "comment": "Great for quick clean-ups and easy to use.",
+            "author": "Ross Geller",
+            "date": "2022-11-05"
+          }
+        ]
+      }
+    ]
+  }
+  

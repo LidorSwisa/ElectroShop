@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/account.css">
+    <link rel="stylesheet" href="../static/css/checkout.css">
+
+    <script src="../static/js/checkout.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Cart</title>
+</head>
+
+<body>
+    <img src="../static/images/im1.png" style="max-width: 100%; z-index:99999;"></img>
+
+    <h4 style="margin-inline: 4rem; text-decoration:underline; text-underline-position:below;" id="category-title">
+    </h4>
+    <div id="product-container">Loading..</div>
+
+    <div id="checkout-container">
+        <div id="checkout-summary">
+            <h3>Summary</h3>
+            <div id="checkout-summary-inner">
+                <div>
+                    <span>Subtotal</span>
+                    <span id="subtotal"></span>
+                </div>
+                <div>
+                    <span>Shipping</span>
+                    <span id="shipping"></span>
+                </div>
+                <div>
+                    <span>Total</span>
+                    <span id="total"></span>
+                </div>
+            </div>
+            <form>
+                <input type="text" placeholder="Full Name" id="full-name" required>
+                <input type="text" placeholder="Address" id="address" required>
+                <input type="text" placeholder="City" id="city" required>
+                <input type="text" placeholder="State" id="state" required>
+                <input type="text" placeholder="Zip Code" id="zip-code" required>
+                <input type="text" placeholder="Phone Number" id="phone-number" required>
+                <input type="text" placeholder="Email" id="email" required>
+                <button type="submit" id="checkout-button">Checkout</button>
+            </form>
+        </div>
+       
+</body>
+
+</html>

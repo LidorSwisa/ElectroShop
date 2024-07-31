@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/account.css">
+    <title>Branches</title>
+    <script defer async 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkC2aOxt-ilf1o8ff06iJb5UeJ1GvSVWk&loading=async&libraries=geometry&callback=initMap">
+        </script>
+</head>
+
+<body>
+
+    <img src="../static/images/im1.png" style="max-width: 100%; z-index:99999;"></img>
+    <div id="product-container">Loading..</div>
+
+    <div id="branches-container">
+        <h3>Branches</h3>
+        <div id="branches-container-inner">
+        </div>
+    </div>
+
+    <script>
+        function initBranches() {
+
+
+            $.ajax({
+                url: '/branches/getAllBranches',
+                method: 'GET',
+                success: function ({ data }) {
+                    let branches = data;
+
+                    const makeBranch = (branch) => {
+                        return `<div class="branch">
+                        <h4>Branch ${branch.address.name}</h4>
+                        <p>Address: ${branch.address.name}</p>
+                        <p>Phone: 123-456-7890</p>
+                        <div id="map_${branch._id}" style="height: 400px; width: 100%;"></div>
+                    </div>`
+                    }
+                    $("#product-container").remove();
+                    $('#branches-container-inner').html(branches.map(makeBranch).join(''));
+                    branches.forEach((branch, index) => {
+                        var map = new google.maps.Map(document.getElementById(`map_${branch._id}`), {
+                            center: { lat: branch.address.location.lat, lng: branch.address.location.lng },
+                            zoom: 8
+                        });
+                    });
+                }
+            });
+        }
+
+        initBranches();
+    </script>
+
+    <style>
+        #branches-container {
+            margin-inline: 4rem;
+        }
+
+        #branches-container-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .branch {
+            width: 100%;
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 1rem;
+        }
+    </style>
+
+</body>
+
+</html>

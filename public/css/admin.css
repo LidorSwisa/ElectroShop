@@ -1,0 +1,56 @@
+#create-category-form,
+#create-product-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+#create-category-form input,
+#create-product-form input,
+#create-product-form button {
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ff416c;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  filter: brightness(90%);
+  transition: 0.3s;
+}
+button:active {
+  transform: translateY(2px);
+}
+.admin-grid {
+  background: rgba(255, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+.admin-advanced-search {
+    display: grid;
+    gap:.5rem;
+}
+.admin-advanced-search  button {
+    font-size: 1.25rem;
+}
+.admin-section-queries {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 98%;
+  border: 1px solid #ccc;
+}
+

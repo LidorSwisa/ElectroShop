@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+#product-wrapper {
+  display: block;
+  min-height: 400px;
+}
+#product-container {
+  display: grid;
+  padding: 1rem;
+  place-items: center;
+  min-height: 400px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100% !important;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-content {
+  padding: 16px;
+  min-height: 180px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.card-content p {
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+.card-footer {
+  padding: 10px 16px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.btn-buy {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  border-radius: 5px;
+}
+
+.btn-buy:hover {
+  filter: brightness(90%);
+}
+
+.card-add-to-cart {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 45% 45% 10%;
+}
+.card-add-to-cart i {
+  font-size: 20px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.padded {
+  padding: 1rem;
+}
+.information {
+  display: grid;
+  max-width: 400px;
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+#cart-count {
+  position: absolute;
+  background-color: rgb(234, 5, 5);
+  color: white;
+  padding-inline: 0.5rem;
+  padding-block: 0.25rem;
+  border-radius: 50%;
+  transform: translateX(-1rem) translateY(-1rem);
+}
+
+.checkout-button {
+  background-color: #ff416c;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+  font-weight: bold;
+  grid-column: span 3;
+  font-size: 1.25rem;
+  margin-top: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: min(400px, 50%);
+}
+
+.checkout-button:hover {
+  filter: brightness(90%);
+  transition: 0.3s;
+  transform: translateY(-2px);
+}
+header {
+  padding: 1rem;
+}
+
+#weather {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+  height: fit-content;
+  align-self:flex-end;
+  height: 10px;
+  margin-left:auto;
+  color: white;
+  font-size: 12px;
+}
+#weather * {
+  margin: 0;
+  padding: 0;
+}
+#weather img {
+  width: 30px;
+  height: 30px;
+}
+@media only screen and (max-width: 1000px) {
+  #logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar {
+    display: none !important;
+  }
+  .toolbar-menu {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .services {
+    display: flex !important;
+    flex-direction: column;
+  }
+}

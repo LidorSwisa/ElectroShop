@@ -1,0 +1,70 @@
+.account {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#account-container {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+#account-container h2 {
+  text-decoration: underline;
+}
+
+h4 {
+  padding: 0.25rem !important;
+  margin: 0;
+}
+p.account {
+  font-size: 16px;
+  padding: 0.25rem;
+  margin: 0;
+  font-weight: normal;
+}
+.order-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.order-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  overflow-x: scroll;
+  margin-bottom: 1rem;
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.order-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px;
+  width:max-content;
+  height: fit-content;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.small {
+    font-size: 12px;
+    font-weight: normal;
+}
