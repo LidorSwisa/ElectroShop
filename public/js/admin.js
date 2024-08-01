@@ -31,7 +31,7 @@ async function renderAdminPage() {
             <label>Product Brand</label>
             <input type="text" name="brand" placeholder="Product brand" required />
             <label>Product Category</label>
-            <select style="padding:.5rem;">
+            <select style="padding:.5rem;" name="category">
             <option value="" disabled selected>Select category</option>
             ${categories.map((c) => `<option value="${c.name}">${c.name}</option>`).join("")}
             </select>

@@ -1,10 +1,17 @@
 const { CreateProductScheme, CreateCategoryScheme } = require("../validation/index");
 const adminDAL = require("../dal/admin.dal");
-
+const clients = require("../clients");
 async function createProduct(req, res) {
   try {
     const scheme = CreateProductScheme.parse(req.body);
     const product = await adminDAL.createProduct(scheme);
+    // Send the new product to all connected clients
+    clients.forEach((client) => {
+      client.send(JSON.stringify({
+        type: "product",
+        data: product,
+      }));
+    });
     return res.status(201).json({
       error: null,
       status: 201,

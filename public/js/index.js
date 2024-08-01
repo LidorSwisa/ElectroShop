@@ -37,12 +37,9 @@ searchSubmit.on("click", () => {
   window.location.href = `/search?query=${searchValue}`;
 });
 
-
-
 // Fetch and render weather conditions for tel aviv
 const renderWeather = (weather) => {
-
- // take only the important stuff (temp, condition, wind, humidity)
+  // take only the important stuff (temp, condition, wind, humidity)
   const { temp_c, condition, wind_kph, humidity } = weather;
 
   const icon = condition.icon; ////cdn.weatherapi.com/weather/64x64/day/113.png
@@ -59,8 +56,7 @@ const renderWeather = (weather) => {
     </b>
     `
   );
-
-}
+};
 const getWeather = () => {
   const lastInvalidationDate = localStorage.getItem("weather-invalidation");
   if (lastInvalidationDate) {
@@ -124,7 +120,7 @@ const getCategories = () => {
   });
 };
 getCategories();
-getWeather()
+getWeather();
 // Holds the user data
 let user;
 
@@ -197,3 +193,19 @@ function fetchUser() {
 
 // Fetch user data
 fetchUser();
+
+// listen to new products through wb socket
+const ws = new WebSocket("ws://localhost:8080");
+ws.onmessage = function (e) {
+  const data = JSON.parse(e.data);
+  if (data.type === "product") {
+    Toastify({
+      text: `New product just came out! ${data.data.name}`,
+      duration: 3000,
+      close: true,
+      gravity: "top",
+      position: "right",
+      backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+    }).showToast();
+  }
+};
